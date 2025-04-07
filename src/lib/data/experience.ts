@@ -75,3 +75,4 @@ export const EducationExperience: ExperienceItemProps[] = [
         tags: ["AI", "Time Series", "LLM", "NLP", "Deep Learning"]
     } 
 ]
+
