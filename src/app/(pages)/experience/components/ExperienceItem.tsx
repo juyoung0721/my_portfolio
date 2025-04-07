@@ -13,7 +13,7 @@ export default function ExperienceItem({ title, subtitle, date, descriptions, ta
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className={`w-full mb-4 bg-white rounded-xl overflow-hidden custom-shadow transition-shadow duration-200 hover:shadow-lg`}>
+    <div className={`w-full min-h-[100px] mb-4 bg-white rounded-xl overflow-hidden custom-shadow transition-shadow duration-200 hover:shadow-lg`}>
       <div 
         className="p-5 cursor-pointer flex justify-between items-center relative hover:bg-pinkgray/20"
         onClick={() => setIsActive(!isActive)}

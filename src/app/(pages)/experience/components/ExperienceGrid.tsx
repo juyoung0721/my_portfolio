@@ -49,12 +49,12 @@ export default function ExperienceGrid({ title, items }: ExperienceSectionProps)
 
   return (
     <>
-      <div className="max-w-[800px] w-full flex flex-col gap-2">
+      <div className="w-full flex flex-col gap-2">
         <h2 className="text-2xl font-semibold text-darkbrown/90">{title}</h2>
         <hr className="h-[1px] text-pinkgray" />
-        <div ref={itemsRef} className="flex flex-col gap-4">
+        <div ref={itemsRef} className="flex flex-col gap-4 w-full">
           {items.map((item, index) => (
-            <div key={index} className="experience-item">
+            <div key={index} className="experience-item w-full">
               <ExperienceItem {...item} />
             </div>
           ))}

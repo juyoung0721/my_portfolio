@@ -27,9 +27,9 @@ export const GroupExperience: ExperienceItemProps[] = [
             "Operated weekly LLM lectures as a core member.",
             "Led material development on foundational LLM, web chatbot, RAG, finetuning, and agents.",
             "Developed generative AI-based services:",
-            "🐱 Cat Companion App: Customizable AI pet with React-based frontend and LLM integration.",
-            "💬 Health Management Chatbot: Full-stack service with OpenAI API, RAG, and finetuning.",
-            "🎞️ AI Video Narration Generator: Multi-modal AI project generating narration from video.",
+            "• Cat Companion App: Customizable AI pet with React-based frontend.",
+            "• Health Management Chatbot: Full-stack service with OpenAI API and RAG.",
+            "• AI Video Narration Generator: Multi-modal AI project for video narration.",
             "Organized and led Python study sessions."
         ],        
         tags: ["LLM", "Generative AI", "Agent"]

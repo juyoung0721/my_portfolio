@@ -49,17 +49,17 @@ export default function Experience() {
     return (
         <>
             <Header />
-            <main className="container mx-auto flex flex-col items-center px-4 mt-24 gap-16">
-                <h1 className="experience-title text-4xl font-extrabold text-darkbrown mb-10">
+            <main className="container mx-auto max-w-[800px] flex flex-col items-center px-4 mt-24 gap-18">
+                <h1 className="experience-title text-4xl font-extrabold text-darkbrown mb-8">
                     My Experience
                 </h1>
-                <div className="experience-section">
+                <div className="experience-section w-full">
                     <ExperienceGrid title="Intern" items={InternExperience} />
                 </div>
-                <div className="experience-section">
+                <div className="experience-section w-full">
                     <ExperienceGrid title="Group" items={GroupExperience} />
                 </div>
-                <div className="experience-section">
+                <div className="experience-section w-full">
                     <ExperienceGrid title="Education" items={EducationExperience} />
                 </div>
             </main>

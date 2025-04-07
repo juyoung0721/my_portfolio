@@ -1,3 +1,4 @@
+'use client';
 import ContactTitle from './components/ContactTitle';
 import ContactForm from './components/ContactForm';
 import ContactInfo from './components/ContactInfo';
