@@ -9,7 +9,7 @@ export default function Contact() {
         <>
         <Header />
         <main className="min-h-screen bg-[#ffeee6] pt-32 pb-20">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 mb:px-16">
             <ContactTitle />
             <div className="flex flex-col lg:flex-row gap-10 mt-16">
             <ContactForm />

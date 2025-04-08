@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Icons } from '@/lib/icons';
 import { getChatCompletionStream } from '@/lib/utils/openai';
 
+
 interface ChatWindowProps {
     isOpen: boolean;
     onClose: () => void;
@@ -129,9 +130,9 @@ export default function ChatWindow({ isOpen, onClose }: ChatWindowProps) {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed bottom-24 right-6 w-[350px] h-[500px] bg-white rounded-3xl shadow-xl flex flex-col overflow-hidden z-50">
+        <div className="fixed md:bottom-24 bottom-0 md:right-6 right-0 md:w-[350px] w-full md:h-[500px] h-[80vh] bg-white md:rounded-3xl rounded-t-3xl shadow-xl flex flex-col overflow-hidden z-50">
             {/* Header */}
-            <div className="p-4 bg-darkbrown text-white flex justify-between items-center rounded-t-3xl">
+            <div className="p-4 bg-darkbrown text-white flex justify-between items-center md:rounded-t-3xl rounded-t-3xl">
                 <h3 className="font-medium">Chat with me</h3>
                 <button 
                     onClick={onClose}

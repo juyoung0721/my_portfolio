@@ -15,7 +15,7 @@ const ProjectPopup = ({ project, onClose }: ProjectPopupProps) => {
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50" onClick={handleOverlayClick}>
-            <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-lg shadow-xl p-8">
+            <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-lg shadow-xl p-4 md:p-8 mx-4 md:mx-0">
                 {/* Close button */}
                 <button
                     onClick={onClose}
@@ -25,7 +25,7 @@ const ProjectPopup = ({ project, onClose }: ProjectPopupProps) => {
                 </button>
 
                 {/* Project title */}
-                <h2 className="text-2xl font-bold text-darkbrown mb-10">{project.title}</h2>
+                <h2 className="text-2xl font-bold text-darkbrown mb-10 pr-10 md:pr-0">{project.title}</h2>
             
                 {/* Project overview */}
                 <section className="mb-8">
@@ -93,7 +93,7 @@ const ProjectPopup = ({ project, onClose }: ProjectPopupProps) => {
                                             >
                                                 <span className="pr-1">{Icons.Document}</span>
                                                 <span>{file.name}</span>
-                                    
+                                    	
                                             </a>
                                         </li>
                                     ))}
