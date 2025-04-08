@@ -57,9 +57,21 @@
 :root {
   --background: #FFF0EC;
   --foreground: #171717;
+  --primary: #6B5B5B;
+  --secondary: #F8D7D0;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+/* 다크모드 설정을 무시하고 라이트모드 색상을 유지 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FFF0EC;
+    --foreground: #171717;
+    --primary: #6B5B5B;
+    --secondary: #F8D7D0;
+  }
 }
 
 @theme inline {
@@ -84,13 +96,6 @@
   box-shadow: 0px 4.364px 16px -2.182px rgba(0, 0, 0, 0.10);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 .font-poppins {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
@@ -101,8 +106,8 @@ html {
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
+  background: var(--background);
   font-family: 'Pretendard', Arial, Helvetica, sans-serif;
   min-height: 100vh;
   overflow-y: auto;
