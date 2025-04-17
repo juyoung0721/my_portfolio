@@ -52,7 +52,7 @@ export const EducationExperience: ExperienceItemProps[] = [
     {
         title: "Advanced Algorithm Intensive Course",
         subtitle: "Samsung SDS",
-        date: "2024.02",
+        date: "2025.02",
         descriptions: [
             "Completed an intensive algorithm course hosted by Samsung SDS.",
             "Learned advanced problem-solving techniques and algorithm design strategies.",

@@ -32,7 +32,7 @@ export default function Header() {
                         </div>
 
                         {/* Desktop Navigation - Hidden on mobile */}
-                        <div className="hidden md:flex justify-center items-center gap-18">
+                        <div className="hidden md:flex justify-center items-center gap-18 w-full">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.name}
