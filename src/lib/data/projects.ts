@@ -76,7 +76,7 @@ export const projects: ProjectType[] = [
         category: ["WEB"],
         description: "LLM 기반 챗봇이 탑재된 개인 포트폴리오 웹사이트",
         imageUrl: "/images/portfolio.png",
-        overview: "이 프로젝트는 ㄴ프로젝트, 기술 스택, 경력 및 활동들을 체계적으로 소개하기 위한 포트폴리오 웹사이트입니다. 전체 구조는 Next.js와 React를 기반으로 설계되었으며, TypeScript와 TailwindCSS를 활용하여 깔끔하고 반응형으로 구현하였습니다.\n\n특히, 웹사이트에는 개인 데이터베이스와 연결된 AI 챗봇이 내장되어 있어 방문자가  궁금한 점을 질문하면 실시간으로 응답하는 인터랙티브 기능을 제공합니다. 챗봇은 OpenAI의 GPT API를 기반으로 구현되었으며, 프롬프트 튜닝을 통해 경력과 경험을 반영한 응답을 생성하도록 설계되었습니다.\n\n이 웹사이트는 단순한 자기소개를 넘어, 사용자와 능동적으로 소통하며 개발자 개인 브랜딩을 강화하는 목적을 가지고 있습니다.",
+        overview: "이 사이트는 프로젝트, 기술 스택, 경력 및 활동들을 체계적으로 소개하기 위한 포트폴리오 웹사이트입니다. 전체 구조는 Next.js와 React를 기반으로 설계되었으며, TypeScript와 TailwindCSS를 활용하여 반응형으로 구현하였습니다.\n\n특히, 웹사이트에는 개인 데이터베이스와 연결된 AI 챗봇이 내장되어 있어 방문자가  궁금한 점을 질문하면 실시간으로 응답하는 인터랙티브 기능을 제공합니다. 챗봇은 OpenAI의 GPT API를 기반으로 구현되었으며, 프롬프트 튜닝을 통해 경력과 경험을 반영한 응답을 생성하도록 설계되었습니다.\n\n이 웹사이트는 단순한 자기소개를 넘어, 사용자와 능동적으로 소통하며 개발자 개인 브랜딩을 강화하는 목적을 가지고 있습니다.",
         technology: ["Next.js", "React", "TypeScript", "TailwindCSS", "OpenAI API", "LLM", "Firebase"],
         role: "단독 개발 - 전체 UI/UX 설계 및 개발, LLM 기반 챗봇 구현, 개인 DB 연동 및 배포",
         gitLink: "https://github.com/juyoung0721/my_portfolio"
