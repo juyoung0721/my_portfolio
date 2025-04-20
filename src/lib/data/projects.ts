@@ -21,7 +21,7 @@ export const projects: ProjectType[] = [
         description: "고양이 특징과 대화 기록을 반영한 맞춤형 대화 서비스",
         imageUrl: "/images/cat_project.png",
         overview: "이 프로젝트는 사용자가 설정한 고양이의 특징과 대화 기록을 반영하여 맞춤형 대화 서비스를 제공하는 웹 기반 AI 시스템입니다. 프론트엔드는 React와 JavaScript로 구현되었으며, 사용자 인터페이스는 직관적이고 감성적인 대화를 유도할 수 있도록 설계되었습니다. 백엔드에서는 OpenAI API를 활용하여 LLM을 기반으로 개인화된 대화를 구현했으며, 사용자 설정과 대화 로그를 바탕으로 자연스러운 상호작용을 지원합니다.\n\n배포 후 이틀 만에 3,000회 이상의 조회수와 평균 세션 시간 6분을 기록하며 사용자 몰입도를 증명하였습니다. 기존 챗봇과 달리 사용자 맞춤형 대화가 가능하다는 점에서 차별화되었고, 고양이와 감성적인 교감을 원하는 고객층에게 긍정적인 피드백을 받았습니다.",
-        technology: ["React", "TypeScript", "OpenAI API", "LLM", "Firebase"],
+        technology: ["React", "TypeScript", "OpenAI API", "LLM"],
         role: "프론트엔드 개발 및 LLM 기반 개인화 대화 기능 구현",
         gitLink: "https://github.com/taykim01/becoming_zipsa"
     },
@@ -77,7 +77,7 @@ export const projects: ProjectType[] = [
         description: "LLM 기반 챗봇이 탑재된 개인 포트폴리오 웹사이트",
         imageUrl: "/images/portfolio.png",
         overview: "이 사이트는 프로젝트, 기술 스택, 경력 및 활동들을 체계적으로 소개하기 위한 포트폴리오 웹사이트입니다. 전체 구조는 Next.js와 React를 기반으로 설계되었으며, TypeScript와 TailwindCSS를 활용하여 반응형으로 구현하였습니다.\n\n특히, 웹사이트에는 개인 데이터베이스와 연결된 AI 챗봇이 내장되어 있어 방문자가  궁금한 점을 질문하면 실시간으로 응답하는 인터랙티브 기능을 제공합니다. 챗봇은 OpenAI의 GPT API를 기반으로 구현되었으며, 프롬프트 튜닝을 통해 경력과 경험을 반영한 응답을 생성하도록 설계되었습니다.\n\n이 웹사이트는 단순한 자기소개를 넘어, 사용자와 능동적으로 소통하며 개발자 개인 브랜딩을 강화하는 목적을 가지고 있습니다.",
-        technology: ["Next.js", "React", "TypeScript", "TailwindCSS", "OpenAI API", "LLM", "Firebase"],
+        technology: ["Next.js", "React", "TypeScript", "TailwindCSS", "OpenAI API", "LLM"],
         role: "단독 개발 - 전체 UI/UX 설계 및 개발, LLM 기반 챗봇 구현, 개인 DB 연동 및 배포",
         gitLink: "https://github.com/juyoung0721/my_portfolio"
     },
@@ -93,7 +93,7 @@ export const projects: ProjectType[] = [
         category: ["LLM", "AI/DATA"],
         description: "Llama 모델을 기반으로 CNN/DailyMail 요약 성능 개선을 위한 파인튜닝 프로젝트",
         overview: "이 프로젝트는 Llama 3.2 1B-Instruct 모델을 활용해 CNN/DailyMail 3.0.0 데이터셋을 요약하는 성능을 개선하고, 다양한 프롬프트 및 하이퍼파라미터 전략을 통해 Rouge Score 향상을 실험한 연구입니다.\n\n초기 분석에서는 요약문의 길이 분포와 토큰 수를 기반으로 전체 데이터셋 특성을 파악했고, max/min token 설정에 따른 Rouge score의 경향성을 평가했습니다. 프롬프트 엔지니어링에서는 반복 문구 제거와 few-shot 예제 삽입이 성능에 미치는 영향을 실험했으며, 결과적으로 반복 표현 제거가 F1 Score를 향상시키고, few-shot 예제는 성능을 저하시킨다는 사실을 도출했습니다.\n\nFine-tuning은 다양한 데이터셋 크기(1K~30K)와 epoch 수(1~3)를 조합해 실험하였고, 최적 결과는 Epoch 3, Dataset 20K 조합에서 나왔습니다. 이 설정에서의 Rouge-1 F1 score는 0.4113, Rouge-L F1 score는 0.3829를 기록했으며, 기존 베이스라인보다 명확한 개선이 관측되었습니다. \n\n모델 성능은 학습량이 증가함에 따라 개선되었으나, 일정 수준 이상에서는 과적합 경향이 나타났으며, 소형 LLM은 요약보다는 분류 등 단순 태스크에 적합하다는 결론도 함께 도출하였습니다. \n\n이 프로젝트는 제한된 리소스 환경에서 최대한의 성능을 끌어내기 위한 전략을 설계하고 검증한 사례로, 실제 도메인 요약 시스템 개발 시 중요한 기초 실험으로 활용될 수 있습니다.",
-        technology: ["Python", "Transformers", "Hugging Face", "Llama-3.2-1B-Instruct", "ROUGE Metric", "Prompt Engineering", "Finetuning"],
+        technology: ["Python", "Transformers", "Hugging Face", "Llama-3.2-1B-Instruct", "ROUGE Score", "Prompt Engineering", "Finetuning"],
         role: "데이터셋 분석, 프롬프트 설계, 모델 파인튜닝 실험 및 결과 평가",
         files: [
             {
