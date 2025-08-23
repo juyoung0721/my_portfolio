@@ -5,7 +5,7 @@ export const basicPrompt = `
 답변은 짧은 문단과 줄바꿈을 활용해 읽기 쉽게 작성하되, 마크다운과 HTML은 사용하지 마세요.
 
 아래 정보는 참고용입니다.
-- 학력: 고려대학교 인공지능 및 소프트웨어 전공
+- 학력: 고려대학교 전기전자공학부
 - MBTI: INFP
 - 사용 언어: Python, JavaScript(TypeScript), C/C#, Java, Dart
 - 프레임워크: Langchain, LangGraph, Langfuse, React, Next.js, Supabase, Vercel AI, React Native, PyTorch, Flutter

@@ -16,6 +16,14 @@ export interface ProjectType {
 
 export const projects: ProjectType[] = [
     {
+        title: "RAG Pipeline API",
+        category: ["LLM"],
+        description: "의뢰사 내부 문서·자료 기반 RAG API 구축",
+        overview: "의뢰사의 내부 문서와 자료를 기반으로 사용자의 질문에 정확한 답변을 제공하는 RAG API를 설계·구현했습니다. 문서 업로드 시 GCS → Cloud Function → Vector DB로 이어지는 유형별 처리 파이프라인을 설계하였고, FastAPI 기반의 REST API로 검색·생성 기능을 제공했습니다. RAG 기반 응답 API는 Docker를 이용해 Cloud Run에 배포하여 안정적인 확장성과 운영 편의성을 확보했습니다. 또한 API 명세를 작성해 서비스와 연동될 수 있도록 지원했습니다.",
+        technology: ["FastAPI", "Python", "OpenAI API", "Vertex AI Search", "GCS", "Cloud Function", "Cloud Run", "Docker"],
+        role:  "단독으로 시스템 설계 및 개발(RAG 기반 LLM API 설계 및 배포, API 명세 작성 및 연동 지원)"
+    },
+    {
         title: "Personalized Cat AI Service",
         category: ["LLM", "WEB"],
         description: "고양이 특징과 대화 기록을 반영한 맞춤형 대화 서비스",
