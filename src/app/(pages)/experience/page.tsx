@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Header from "@/components/header";
 import ExperienceGrid from "./components/ExperienceGrid";
 import Footer from "@/components/footer";
-import { InternExperience, GroupExperience, EducationExperience } from "@/lib/data/experience";
+import { InternExperience, GroupExperience, EducationExperience, QualificationExperience } from "@/lib/data/experience";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,6 +61,9 @@ export default function Experience() {
                 </div>
                 <div className="experience-section w-full">
                     <ExperienceGrid title="Education" items={EducationExperience} />
+                </div>
+                <div className="experience-section w-full">
+                    <ExperienceGrid title="Qualification" items={QualificationExperience} />
                 </div>
             </main>
             <Footer />

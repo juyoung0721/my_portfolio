@@ -50,6 +50,17 @@ export const GroupExperience: ExperienceItemProps[] = [
 
 export const EducationExperience: ExperienceItemProps[] = [
     {
+        title: "Korea University",
+        subtitle: "B.S. in Electrical and Electronic Engineering",
+        date: "2020.03 - 2025.08",
+        descriptions: [
+            "Graduated with a GPA of 4.11 / 4.5.",
+            "Built a strong foundation in electronics, computer science, and applied AI.",
+            "Engaged in various projects combining cloud, networks, and large language models."
+        ],
+        tags: ["Korea University", "Academic"]
+    },
+    {
         title: "Advanced Algorithm Intensive Course",
         subtitle: "Samsung SDS",
         date: "2025.02",
@@ -74,5 +85,18 @@ export const EducationExperience: ExperienceItemProps[] = [
         ],
         tags: ["AI", "Time Series", "LLM", "NLP", "Deep Learning"]
     } 
+]
+
+export const QualificationExperience: ExperienceItemProps[] = [
+    {
+    title: "SQLD Certification",
+    subtitle: "Korea Data Agency",
+    date: "2024.09",
+    descriptions: [
+        "Achieved SQL Developer certification with strong knowledge of relational databases.",
+        "Demonstrated proficiency in SQL query optimization and data modeling."
+    ],
+    tags: ["Database", "SQLD", "Certification"]
+    }
 ]
 
